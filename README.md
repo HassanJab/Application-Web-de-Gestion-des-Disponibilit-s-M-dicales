@@ -38,7 +38,7 @@ Cette application Web permet aux médecins de gérer leurs disponibilités et au
 
 ```sh
 git clone <url_du_dépôt>
-cd gestion_disponibilites
+cd doctor web
 ```
 ```sh
 pip install -r requirements.txt
