@@ -1,0 +1,174 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background3.jpg'); /* Chemin relatif */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #135e46;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff; /* Texte blanc */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdbdb; /* Texte légèrement gris au survol */
+}
+
+/* Conteneur */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Titres */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Tableaux */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Formulaires */
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="datetime-local"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* Gradient et responsive */
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #FEFAF9, #73a788, #478966, #135e46);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #D9EFBF, #73a788, #478966, #135e46);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+
+.home-page, .register-page {
+    background-image: none !important;
+}
+
+/* Transition for smooth fade-out */
+.alert {
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Smooth fade-out effect */
+}
+
+/* Add the 'alert-hidden' class to hide the flash message */
+.alert-hidden {
+    opacity: 0;
+    display: none; /* Fully hide the element after fade */
+}
